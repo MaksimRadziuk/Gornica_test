@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="test">
+		<div class="test_content-wrap">
+			<h2>Узнайте за 2 минуты стоимость ваших окон!</h2>
+			<div class="list_wrap">
+				<p class="title">Ответьте на 5 вопросов и получите:</p>
+				<ul>
+					<li>Предварительный расчет окон</li>
+					<li>Скидку за экономию нашего времени</li>
+				</ul>
+			</div>
+			<button id="getTheTest">Пройти тест и получить результаты на телефон</button>
+		</div>
+	</div>
+
+	<div id="calc_test">
+		<div class="calc_test-wrap">
+			<div class="popup_wrap">
+				<div class="popup_header">
+					<h3>Пройдите тест и получите точную цену на окна сразу!</h3>
+					<div class="close_popup">
+						<span></span><span></span>
+					</div>
+				</div>
+				<div class="popup_body">
+					<div class="body_container">
+						<div class="form_wrap">
+							<form id="calcTestForm">
+								<!-- Hidden Required Fields -->
+								<input type="hidden" name="project_name" value="https://gornica-krasnodar.ru">
+								<input type="hidden" name="admin_email" value="maxy-m@mail.ru">
+								<input type="hidden" name="form_subject" value="Тест-калькулятор">
+								<!-- END Hidden Required Fields -->
+								<div class="form form_1 active">
+									<div class="title">Себе стеклите или Вы подрядчик?</div>
+									<div class="input_wrap">
+										<input type="radio" name="Для кого" id="whomSelf" value="Себе" checked required><label for="whomSelf">Себе</label>
+										<input type="radio" name="Для кого" id="whomPartner" value="Подрядчик"><label for="whomPartner">Подрядчик</label>
+									</div>
+								</div>
+								<div class="form form_2">
+									<div class="title">Что вы хотите остеклить?</div>
+									<div class="input_wrap">
+										<input type="radio" name="Что стеклить" id="House" value="Дом" checked required><label for="House">Дом</label>
+										<input type="radio" name="Что стеклить" id="Balcony" value="Балкон"><label for="Balcony">Балкон</label>
+										<input type="radio" name="Что стеклить" id="whatOther" value="Другое"><label for="whatOther">Другое</label>
+									</div>
+								</div>
+								<div class="form form_3">
+									<div class="title">Где находится объект?</div>
+									<div class="input_wrap">
+										<input type="radio" name="Где объект" id="krasnodar" value="Краснодар" checked required><label for="krasnodar">Краснодар</label>
+										<input type="radio" name="Где объект" id="shore" value="Побережье"><label for="shore">Побережье</label>
+										<input type="radio" name="Где объект" id="region" value="Край"><label for="region">Край</label>
+									</div>
+								</div>
+								<div class="form form_4">
+									<div class="title">В какой категории вы хотите остекление?</div>
+									<div class="input_wrap">
+										<input type="radio" name="Категория" id="premium" value="Премиум" checked required><label for="premium">Премиум</label>
+										<input type="radio" name="Категория" id="standard" value="Стандарт"><label for="standard">Стандарт</label>
+										<input type="radio" name="Категория" id="economy" value="Эконом"><label for="economy">Эконом</label>
+									</div>
+								</div>
+								<div class="form form_5">
+									<div class="title">Сколько окон?</div>
+									<div class="input_wrap">
+										<input type="radio" name="Количество" id="lowAmount" value="1 - 2" checked required><label for="lowAmount">1 - 2</label>
+										<input type="radio" name="Количество" id="mediumAmount" value="3 - 5"><label for="mediumAmount">3 - 5</label>
+										<input type="radio" name="Количество" id="topAmount" value="6 и более"><label for="topAmount">6 и более</label>
+									</div>
+								</div>
+								<div class="form form_6">
+									<div class="title">Какого цвета вы хотите профиль?</div>
+									<div class="input_wrap">
+										<input type="radio" name="Цвет" id="colorWhite" value="Белый" checked required><label for="colorWhite">Белый</label>
+										<input type="radio" name="Цвет" id="colorBrown" value="Коричневый"><label for="colorBrown">Коричневый</label>
+										<input type="radio" name="Цвет" id="colorOther" value="Другое"><label for="colorOther">Другое</label>
+									</div>
+								</div>
+								<div class="form form_7">
+									<div class="title">Куда вам было бы удобнее, чтобы мы отправили пресчет?</div>
+									<div class="input_wrap">
+										<input type="radio" name="Тип связи" id="typeMessenger" value="WhattsApp" checked required><label for="typeMessenger">WhattsApp</label>
+										<input type="radio" name="Тип связи" id="typePhone" value="Телефон"><label for="typePhone">Телефон</label>
+									</div>
+								</div>
+								<div class="form form_8 ">
+									<div class="title">Отлично. Последний шаг! Заполните эту форму и получите точную цену ваших окон.</div>
+									<div class="input_wrap">
+										<input name="Имя" type="text" placeholder="Ваше имя *" required>
+										<input name="Номер телефона" type="text" placeholder="Номер телефона *" required>
+									</div>
+									<div class="policy_wrap">
+										<input type="checkbox" id="test_policy" checked >
+										<label for="test_policy">Я принимаю <a href="#">пользовательское соглашение</a> и <a href="#">политику конфиденциальности</a></label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="discount_wrap">
+							<div class="discount_counter">
+								<span>Ваша скидка </span>
+								<span id="discountValue">0</span>
+								<span>%</span>
+							</div>
+							<div class="chief_wrap">
+								<div class="person_wrap">
+									<div class="chief_img">
+										<img src="img/chief_calc.jpg" alt="">
+									</div>
+									<p class="chief_name">Алексей Ракуль</p>
+									<p class="chief_position">Руководитель отдела по работе с клиентами</p>
+								</div>
+								<p class="chief_speech">Наша главная задача – создать благоприятный микроклимат в доме, ведь хороший микроклимат способствует комфортной жизни и сохраняет здоровье</p>
+							</div>
+						</div>
+					</div>
+					<div class="body_footer">
+						<div class="first_form-button">
+							<button class="nextForm">Далее</button>
+						</div>
+						<div class="mid_form-button">
+							<button class="prevForm">Назад</button>
+							<button class="nextForm">Далее</button>
+						</div>
+						<div class="last_form-button">
+							<button type="submit" form="#calcTestForm">Получить результаты</button>
+						</div>
+					</div>
+				</div>
+				<div class="popup_footer">
+					<div class="readyness_wrap">
+						<span>Готово</span>
+						<span id="readynessValue">0</span>
+						<span>%</span>
+					</div>
+					<div class="redyness_bar">
+						<div class="scale"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="jquery-3.1.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
