@@ -134,7 +134,7 @@ $(document).ready(function(){
 		$('#discountValue').text('20');
 		$('#readynessValue').text('100');
 		$('.redyness_bar .scale').css('width', '100%');
-		$("#calcTestForm").submit(function() { //Change
+		/*$("#calcTestForm").submit(function() { //Change
 			var th = $(this);
 			$.ajax({
 				type: "POST",
@@ -149,7 +149,7 @@ $(document).ready(function(){
 				}, 1000);
 			});
 			return false;
-		});
+		});*/
 	});
 	
 });
