@@ -150,7 +150,7 @@ $(document).ready(function(){
 		$('#discountValue').text('20');
 		$('#readynessValue').text('100');
 		$('.redyness_bar .scale').css('width', '100%');
-		$('#calcTestForm').fadeOut(800);
+		$('#calc_test').fadeOut(800);
 	});
 	
 });
