@@ -134,6 +134,7 @@ $(document).ready(function(){
 		$('#discountValue').text('20');
 		let phoneNumber = $('#testPhoneNumber').val();
 		let userName = $('#testUserName').val();
+		alert(phoneNumber, userName);
 		if (phoneNumber.length > 0 && userName.length > 0){
 			$('#calcTestForm').submit();
 			$('#readynessValue').text('100');
