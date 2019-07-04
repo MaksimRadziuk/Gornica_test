@@ -151,7 +151,7 @@ $(document).ready(function(){
 		$('#readynessValue').text('100');
 		$('.redyness_bar .scale').css('width', '100%');
 		alert('Спасибо, за прохождение теста!');
-		$('#calc_test').fadeOut(400);
+		$('#calc_test').fadeOut(800);
 	});
 	
 });
