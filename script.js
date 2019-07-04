@@ -150,7 +150,8 @@ $(document).ready(function(){
 		$('#discountValue').text('20');
 		$('#readynessValue').text('100');
 		$('.redyness_bar .scale').css('width', '100%');
-		$('#calc_test').fadeOut(800);
+		alert('Спасибо, за прохождение теста!');
+		$('#calc_test').fadeOut(400);
 	});
 	
 });
