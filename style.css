@@ -335,7 +335,7 @@ body {
 	cursor: pointer;
 	border-bottom:5px solid #cb1509;
 }
-.body_footer button:focus {
+.body_footer button:focus, .body_footer input[type="submit"]:focus {
 	outline: none;
 }
 .body_footer button.prevForm {
