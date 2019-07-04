@@ -132,12 +132,12 @@ $(document).ready(function(){
 
 	$('#submitFormCalc').click(function(){
 		$('#discountValue').text('20');
-		$('#readynessValue').text('100');
-		$('.redyness_bar .scale').css('width', '100%');
 		let phoneNumber = $('#testPhoneNumber').val();
 		let userName = $('#testUserName').val();
 		if (phoneNumber.length > 0 && userName.length > 0){
 			$('#calcTestForm').submit();
+			$('#readynessValue').text('100');
+			$('.redyness_bar .scale').css('width', '100%');
 			setTimeout(function(){
 				$('#calc_test').fadeOut(600);
 				$('#calcTestForm')[0].reset();
