@@ -320,7 +320,7 @@ body {
 	margin-top: 30px;
 	margin-bottom: 10px;
 }
-.body_footer button {
+.body_footer button, .body_footer input[type="submit"] {
 	display: inline-block;
 	border:none;
 	background-color: #e3170c;
@@ -341,7 +341,7 @@ body {
 .body_footer button.prevForm {
 	margin-right: 35px;
 }
-.body_footer .last_form-button button {
+.body_footer .last_form-button input {
 	width: 305px;
 }
 .body_footer .last_form-button, 

@@ -130,31 +130,26 @@ $(document).ready(function(){
 		}
 	});
 
-	$("#calcTestForm").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			$('#calc_test').fadeOut(400);
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-	$(".last_form-button button").click(function(){
+	$('#submitFormCalc').click(function(){
 		$('#discountValue').text('20');
 		$('#readynessValue').text('100');
 		$('.redyness_bar .scale').css('width', '100%');
-		alert('Спасибо, за прохождение теста!');
-		setTimeout(function() {
-			$('#calc_test').fadeOut(400);
-		}, 1000);
-		
+		$("#calcTestForm").submit(function() { //Change
+			var th = $(this);
+			$.ajax({
+				type: "POST",
+				url: "mail.php", //Change
+				data: th.serialize()
+			}).done(function() {
+				alert("Hurray!");
+				setTimeout(function() {
+					// Done Functions
+					th.trigger("reset");
+					$('#calc_test').fadeOut(400);
+				}, 1000);
+			});
+			return false;
+		});
 	});
 	
 });
