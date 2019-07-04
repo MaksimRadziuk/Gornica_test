@@ -140,7 +140,7 @@ $(document).ready(function(){
 			$('#calcTestForm').submit();
 			setTimeout(function(){
 				$('#calc_test').fadeOut(600);
-				$('#calcTestForm').reset();
+				$('#calcTestForm')[0].reset();
 				$('#discountValue').text('0');
 				$('#readynessValue').text('0');
 				$('.redyness_bar .scale').css('width', '0%');
