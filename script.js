@@ -136,24 +136,8 @@ $(document).ready(function(){
 		$('.redyness_bar .scale').css('width', '100%');
 		$('#calcTestForm').submit();
 		setTimeout(function(){
-			$('#calcTestForm').fadeOut(600);
+			$('#calc_test').fadeOut(600);
 		},400);
-		/*$("#calcTestForm").submit(function() { //Change
-			var th = $(this);
-			$.ajax({
-				type: "POST",
-				url: "mail.php", //Change
-				data: th.serialize()
-			}).done(function() {
-				alert("Hurray!");
-				setTimeout(function() {
-					// Done Functions
-					th.trigger("reset");
-					$('#calc_test').fadeOut(400);
-				}, 1000);
-			});
-			return false;
-		});*/
 	});
 	
 });
