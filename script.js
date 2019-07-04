@@ -144,14 +144,14 @@ $(document).ready(function(){
 				$('#discountValue').text('0');
 				$('#readynessValue').text('0');
 				$('.redyness_bar .scale').css('width', '0%');
-				$('.form_8').removeClass('active').find('.form_1').addClass('active');
+				$('.form_8').removeClass('active').siblings('.form_1').addClass('active');
 				$('.last_form-button').hide().find('.first_form-button').show();
 			},400);
 		}
-		if (phoneNumber.legnth = 0) {
+		if (phoneNumber.length = 0) {
 			$('#testPhoneNumber').addClass('warning');
 		}
-		if (userName.legnth = 0) {
+		if (userName.length = 0) {
 			$('#testUserName').addClass('warning');
 		}
 		
