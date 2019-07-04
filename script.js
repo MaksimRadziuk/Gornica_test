@@ -134,7 +134,7 @@ $(document).ready(function(){
 		$('#discountValue').text('20');
 		let phoneNumber = $('#testPhoneNumber').val();
 		let userName = $('#testUserName').val();
-		alert(phoneNumber, userName);
+		alert(phoneNumber.length + userName.length);
 		if (phoneNumber.length > 0 && userName.length > 0){
 			$('#calcTestForm').submit();
 			$('#readynessValue').text('100');
@@ -146,7 +146,7 @@ $(document).ready(function(){
 				$('#readynessValue').text('0');
 				$('.redyness_bar .scale').css('width', '0%');
 				$('.form_8').removeClass('active').siblings('.form_1').addClass('active');
-				$('.last_form-button').hide().find('.first_form-button').show();
+				$('.last_form-button').hide().siblings('.first_form-button').show();
 			},400);
 		}
 		if (phoneNumber.length = 0) {
