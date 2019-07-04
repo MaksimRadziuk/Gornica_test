@@ -402,6 +402,23 @@ body {
 	font-size: 24px;
 	padding-left: 30px;
 }
+.form_8 .input_wrap input[type='text'].warning {
+	animation:blinkBorder 0.4s linear;
+}
+@keyframes blinkBorder {
+	0% {
+		border: 3px solid #e3e3e3;
+	}
+	49% {
+		border: 3px solid #e3e3e3;
+	}
+	50% {
+		border: 3px solid #cb1509;
+	}
+	99% {
+		border: 3px solid #cb1509;
+	}
+}
 .form_8 .input_wrap input[type='text']:first-child {
 	margin-right: 40px;
 }

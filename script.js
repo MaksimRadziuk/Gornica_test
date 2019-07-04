@@ -134,11 +134,30 @@ $(document).ready(function(){
 		$('#discountValue').text('20');
 		$('#readynessValue').text('100');
 		$('.redyness_bar .scale').css('width', '100%');
-		$('#calcTestForm').submit();
-		setTimeout(function(){
-			$('#calc_test').fadeOut(600);
-			$('#calcTestForm').reset();
-		},400);
+		let phoneNumber = $('#testPhoneNumber').val();
+		let userName = $('#testUserName').val();
+		if (phoneNumber.length > 0 && userName.length > 0){
+			$('#calcTestForm').submit();
+			setTimeout(function(){
+				$('#calc_test').fadeOut(600);
+				$('#calcTestForm').reset();
+				$('#discountValue').text('0');
+				$('#readynessValue').text('0');
+				$('.redyness_bar .scale').css('width', '0%');
+				$('.form_8').removeClass('active').find('.form_1').addClass('active');
+				$('.last_form-button').hide().find('.first_form-button').show();
+			},400);
+		}
+		if (phoneNumber.legnth = 0) {
+			$('#testPhoneNumber').addClass('warning');
+		}
+		if (userName.legnth = 0) {
+			$('#testUserName').addClass('warning');
+		}
+		
+	});
+	$('.form_8 input[type="text"]').click(function(){
+		$(this).removeClass('warning');
 	});
 	
 });
