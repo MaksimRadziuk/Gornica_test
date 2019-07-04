@@ -137,6 +137,7 @@ $(document).ready(function(){
 		$('#calcTestForm').submit();
 		setTimeout(function(){
 			$('#calc_test').fadeOut(600);
+			$('#calcTestForm').reset();
 		},400);
 	});
 	
